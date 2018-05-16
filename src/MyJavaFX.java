@@ -69,7 +69,7 @@ public class MyJavaFX extends Application {
         //*************
         
         GridPane pane = new GridPane();
-        vbox.getChildren().add(pane);
+       // vbox.getChildren().add(pane);
         pane.setAlignment(Pos.CENTER);
         pane.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
         pane.setHgap(5.5);
@@ -111,7 +111,7 @@ public class MyJavaFX extends Application {
         
         
         //**************************
-        Scene scene = new Scene(root,500,625);
+        Scene scene = new Scene(pane,1000,725);
         primaryStage.setTitle("MyJavaFX");
         primaryStage.setScene(scene);
         primaryStage.show();
